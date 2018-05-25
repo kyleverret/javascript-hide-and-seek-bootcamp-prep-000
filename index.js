@@ -19,7 +19,7 @@ function deepestChild(){
     var myRes;
     if (current.querySelector('div') != null){
       current = current.querySelector('div');
-      drill(current);
+      return drill(current);
   }
     else{
       myRes = current;
