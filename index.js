@@ -22,8 +22,7 @@ function deepestChild(){
       return drill(current);
   }
     else{
-      myRes = current;
-      return myRes;
+      return current;
     }
   
 }
