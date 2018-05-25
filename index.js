@@ -14,5 +14,20 @@ for (let i = 0; i < myVar.length; i++) {
 }
 
 function deepestChild(){
-  while ()
+  
+  function drill(current){
+    var myRes;
+    if (current.querySelector('div') != null){
+      current = current.querySelector('div');
+      drill(current);
+  }
+    else{
+      myRes = current;
+      return myRes;
+    }
+  
+}
+  
+  var current = document.getElementById('grand-node');
+  return drill(current);
 }
